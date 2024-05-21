@@ -1,5 +1,3 @@
-import("eruda")
-console.log("Hewro eruda");
 const elm = document.getElementById('input');
 elm.addEventListener("change",change,false);
 async function change() {
