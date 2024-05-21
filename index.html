@@ -3,9 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Hello wasm-pack!</title>
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();console.log("hewro");</script>
+    <script src="./bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-    <script src="./bootstrap.js"></script>
+    <p id="class">class text</p>
+    <p id="timeleft">timeleft text</p>
+    <p id="currenttime">current time text</p>
+    <div style="padding-bottom:1.5vw"><a href="example.csv" style="color:blue;font-size:2vw">Example csv file</a></div>
+  <div><label style="font-size: 1.5vw;">Custom CSV File</label><input type="file" id="input"></input></div>
+    <script src="times.js"></script>
+  <div><a href="/" id="home">home</a></div>
   </body>
 </html>

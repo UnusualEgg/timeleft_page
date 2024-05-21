@@ -4,11 +4,11 @@ const path = require('path');
 module.exports = {
   entry: "./bootstrap.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve("/home/unusualegg/public_html/timeleft"),
     filename: "bootstrap.js",
   },
   mode: "development",
   plugins: [
-    new CopyWebpackPlugin(['index.html'])
+    new CopyWebpackPlugin(['index.html','style.css'])
   ],
 };
